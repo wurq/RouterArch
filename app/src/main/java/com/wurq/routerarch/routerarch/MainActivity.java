@@ -1,7 +1,9 @@
 package com.wurq.routerarch.routerarch;
 
-import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+import android.support.v7.app.AppCompatActivity;
+
+import com.wurq.routerarch.R;
 
 public class MainActivity extends AppCompatActivity {
 
