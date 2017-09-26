@@ -1,16 +1,16 @@
 package com.wurq.routerarch.application;
 
-import android.app.Application;
 import android.content.Context;
 import android.os.Handler;
 
 import com.wurq.base.util.ScreenUtil;
+import com.wurq.routerarch.AbsApplication.AbsRouterApplication;
 
 /**
  * Created by wurongqiu on 2017/9/16.
  */
 
-public class RouterArchApplication extends Application {
+public class RouterArchApplication extends AbsRouterApplication {
     static Handler sMainThreadHandler;
 
     @Override
@@ -25,6 +25,20 @@ public class RouterArchApplication extends Application {
 
     }
 
+    @Override
+    public void initializeAllProcessRouter() {
+
+    }
+
+    @Override
+    protected void initializeLogic() {
+
+    }
+
+    @Override
+    public boolean needMultipleProcess() {
+        return false;
+    }
 
 
     @Override

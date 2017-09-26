@@ -21,7 +21,7 @@ import com.wurq.base.view.FragmentAdapter;
 import com.wurq.base.view.fragmenttabhost.FragmentTabHost;
 import com.wurq.routerarch.R;
 import com.wurq.routerarch.module.mainpage.presenter.MainPresenter;
-import com.wurq.routerarch.router.TestRouter;
+import com.wurq.routerarch.test.Testt;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -162,7 +162,7 @@ public class MainActivity extends BaseActivity<MainPresenter>
         TextView mTextView = (TextView) view.findViewById(R.id.tab_textview);
         mImageView.setBackgroundResource(mTabIcons[index]);
 //        mTextView.setText(sTabTexts[index]);
-        mTextView.setText(TestRouter.getRouterString());
+        mTextView.setText(Testt.getRouterString());
         return view;
     }
 
